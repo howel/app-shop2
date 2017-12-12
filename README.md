@@ -9,3 +9,14 @@
  - $ php artisan serve
  - $ php artisan make:controller TestController
  - $ php artisan make:auth
+ - $ php artisan make:model Category -m
+ - $ php artisan migrate
+ - $ php artisan migrate:rollback  -- ultimo batch de migraciones
+ - $ php artisan migrate:reset     -- todas las migraciones
+ - $ php artisan make:seeder UsersTableSeeder
+ - $ php artisan db:seed
+ - $ php artisan make:seeder ProductsTableSeeder
+ - $ php artisan make:factory ProductFactory
+
+   //Resetea las migraciones (down), las vuelve a ejecutar (up) y ejecuta los seeders
+ - $ php artisan migrate:refresh --seed  
